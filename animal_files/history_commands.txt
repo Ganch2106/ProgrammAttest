@@ -1,0 +1,448 @@
+    1  sudo apt update
+    2  clear
+    3  mc
+    4  clear
+    5  sudo apt install openssh-server 
+    6  ip a
+    7  clear
+    8  systemctl status ssh
+    9  ip a
+   10  systemctl status ssh
+   11  ip a
+   12  systemctl status ssh
+   13  sudo service ssh start
+   14  systemctl status ssh
+   15  mc
+   16  exit
+   17  ip a
+   18  systemctl status ssh
+   19  ip a
+   20  mc
+   21  sudo apt update
+   22  sudo apt install gcc make perl
+   23  sudo reboot
+   24  sudo usermod -aG vboxsf ganch2106
+   25  sudo apt update
+   26  sudo apt instal openssh-server mc
+   27  sudo apt install openssh-server mc
+   28  systemctl status ssh
+   29  sudo service ssh start
+   30  systemctl status ssh
+   31  ip a
+   32  sudo apt install gcc make perl
+   33  ls
+   34  ls - al
+   35  ls -al
+   36  pwd
+   37  mkdir test
+   38  ll
+   39  cd test
+   40  pwd
+   41  touch testfile
+   42  ll
+   43  tiuch testfile2
+   44  touch testfile2
+   45  ll
+   46  cat > testcat
+   47  ll
+   48  cat testcat
+   49  cat >> testcat
+   50  pwd
+   51  ll
+   52  cd test
+   53  ll
+   54  cat testcat
+   55  cat testfile2
+   56  cat >> testfile2
+   57  cat testfile2
+   58  cp testcat test2
+   59  ll
+   60  cp test2 test3
+   61  ll
+   62  cat >> test2
+   63  ll
+   64  cat test3 test2
+   65  cat testcat
+   66  cat test3
+   67  cat test2
+   68  cat >> test2
+   69  cat test2
+   70  ll
+   71  cd
+   72  cp test/ testcat test/test4
+   73  cp test/testcat test/test4
+   74  ll
+   75  cd test
+   76  ll
+   77  cp /home/ganch2106/test/testcat /home/ganch2106/test/test4
+   78  ll
+   79  cp -r /test testcp
+   80  cp -r test testcp
+   81  ll
+   82  ..
+   83  cd ..
+   84  cp test testcp
+   85  cp -r test testcp
+   86  ll
+   87  cd testcp
+   88  ll
+   89  cd..
+   90  cd ..
+   91  mv testcp testnew
+   92  ll
+   93  cd testnew
+   94  ll
+   95  rm test4
+   96  ll
+   97  rm -fr testfile
+   98  ll
+   99  cd ..
+  100  cd
+  101  cd ~
+  102  cp ~/test ~/test2
+  103  cp ~/test -r ~/test2
+  104  ll
+  105  rm -f test2
+  106  rm -fr test2
+  107  ll
+  108  cd test
+  109  ll
+  110  rm -fr test3
+  111  ll
+  112  ln test2 testln
+  113  ll
+  114  cat > test2
+  115  ll
+  116  cat testln
+  117  cat test2
+  118  cat >> test2
+  119  ll
+  120  ls -ali
+  121  rm testln
+  122  ll
+  123  df -h
+  124  ln test2 testln
+  125  ll
+  126  mv testln ..
+  127  ll
+  128  ..
+  129  cd..
+  130  cd ..
+  131  ll
+  132  cd test
+  133  ll
+  134  ls -ali
+  135  cd ..
+  136  ls -ali
+  137  cd test
+  138  ll
+  139  cat test_lns
+  140  cat >> test_lns
+  141  ll
+  142  cat test_lns
+  143  cat test2
+  144  cat test_lns
+  145  cat >> test_lns
+  146  ll
+  147  cat test_lns
+  148  cat test2
+  149  mv test_lns ..
+  150  cd ..
+  151  ll
+  152  mv test_lns test
+  153  cd test
+  154  ll
+  155  mv test_lns ..
+  156  cd ..
+  157  cat test_lns
+  158  ll
+  159  cat test_lns
+  160  cd test
+  161  ln -s /home/ganch2106/test/test2 ln_abs
+  162  ll
+  163  mv ln_abs ..
+  164  cd ..
+  165  ll
+  166  cat ln_abs
+  167  rm test_lns
+  168  ll
+  169  vim
+  170  sudo apt install vim
+  171  vim
+  172  cd test
+  173  ll
+  174  vim test2
+  175  nano test2
+  176  mcedit test2
+  177  cd ..
+  178  ll
+  179  cd ..
+  180  ll
+  181  cd ..
+  182  ll
+  183  cd var
+  184  ll
+  185  cd log
+  186  ll
+  187  cat kern.log
+  188  less kern.log
+  189  more kern.log
+  190  q
+  191  tail syslog
+  192  tail -n 5 syslog
+  193  tail -n 50 syslog
+  194  tail -f syslog
+  195  head -n 20 syslog
+  196  ip -a
+  197  ip -i
+  198  ssh
+  199  ip a
+  200  sudo useradd -s /bin/bash -d /home/test -m test
+  201  cat /etc/passwd | grep test
+  202  cd /home
+  203  sudo su
+  204  passwd test
+  205  sudo passwd test
+  206  cat /etc/shadow
+  207  sudo cat /etc/shadow
+  208  groupadd testg
+  209  sudo groupadd testg
+  210  cat/etc/group
+  211  cat /etc/group
+  212  groupdel testg
+  213  sudo groupdel testg
+  214  cat /etc/group | grep test
+  215  cat /etc/group
+  216  sudo usermod -g www-data test2
+  217  if test; q;  asd
+  218  id test2
+  219  sudo usermod -aG sambashare test2
+  220  cat /etc/passwd
+  221  cat /etc/passwd | grep gg
+  222  cat /etc/passwd | grep test
+  223  cat /etc/group | grep test
+  224  cat /etc/sudoers
+  225  sudo cat /etc/sudoers
+  226  sudo visudo
+  227  su test2
+  228  cd test
+  229  exit
+  230  cd test
+  231  sudo chown test2
+  232  sudo chown ganch2106:www-data test2
+  233  ll
+  234  sudo chgrp ganch2106 test2
+  235  ll
+  236  sudo chown www-data test2
+  237  ll
+  238  cd ..
+  239  sudo chown -R ganch2106:www-data test
+  240  ll
+  241  cd test
+  242  ll
+  243  sudo chmod 755 test2
+  244  ll
+  245  sudo chmod 644 test2
+  246  ll
+  247  sudo chmod 664 test2
+  248  ll
+  249  sudo chmod 662 test2
+  250  ll
+  251  sudo chmod 664 test2
+  252  ll
+  253  sudo chmod +x test2
+  254  ll
+  255  sudo chmod u=rw,g=r,o=x test2
+  256  ll
+  257  sudo chmod u-w,g=r,o=x test2
+  258  ll
+  259  sudo chmod u-x,g=r,o=x test2
+  260  ll
+  261  sudo chmod u-r,g=r,o=x test2
+  262  ll
+  263  sudo chmod u=rwx,g=r,o=x test2
+  264  ll
+  265  sudo chmod u+s test4
+  266  ll
+  267  sudo chmod a+x test4
+  268  ll
+  269  cd ..
+  270  ll
+  271  sudo chmod g+s test
+  272  ll
+  273  cd test
+  274  ll
+  275  cat > test_sgid
+  276  ll
+  277  id
+  278  cd ..
+  279  sudo chmod o+t test
+  280  ll
+  281  sudo chmod a+w test
+  282  ll
+  283  su test2
+  284  umask
+  285  touch test_umask
+  286  ls -al test_umask
+  287  umask 022
+  288  touch test_umask2
+  289  touch test_umask
+  290  ls -al test_umask
+  291  ls -al test_umask2
+  292  umask 002
+  293  umask
+  294  sudo apt update
+  295  systemctl status ssh
+  296  enabled ssh
+  297  sudo service ssh start
+  298  systemctl status ssh
+  299  ip a
+  300  apt update
+  301  sudo apt update
+  302  apt search nginx
+  303  apt list nginx
+  304  apt  install nginx
+  305  sudo apt  install nginx
+  306  sudo apt remove nginx
+  307  sudo apt autoremove
+  308  apt list nginx
+  309  sudo su
+  310  crontap -e
+  311  crontab -e
+  312  sudo apt update
+  313  apt search nginx
+  314  apt list nginx
+  315  sudo apt install nginx
+  316  sudo dpkg -r nginx
+  317  sudo dpkg -purge nginx
+  318  sudo dpkg --purge nginx
+  319  sudo dpkg --remove nginx
+  320  sudo dpkg -purge nginx
+  321  sudo dpkg --purge nginx
+  322  sudo dpkg --help
+  323  sudo apt remove nginx
+  324  sudo autoremove nginx
+  325  sudo apt autoremove nginx
+  326  ll nginx
+  327  nginx
+  328  apt list nginx
+  329  sudo apt install nginx
+  330  dpkg -r nginx
+  331  sudo dpkg -r nginx
+  332  sudo dpkg --purge nginx
+  333  sudo apt autoremove nginx
+  334  sudo dpkg --purge nginx
+  335  apt list nginx
+  336  apt install nginx
+  337  sudo apt install nginx
+  338  sudo dpkg -r nginx
+  339  sudo dpkg --purge nginx
+  340  sudo apt remove nginx
+  341  sudo apt autoremove nginx
+  342  snap find
+  343  sudo apt install nginx
+  344  sudo dpkg -r nginx
+  345  apt -f install
+  346  sudo apt -f install
+  347  sudo dpkg --purge nginx
+  348  sudo apt -f install
+  349  sudo apt autoremove nginx
+  350  snap search
+  351  snap install vaivaldi
+  352  sudo snap install vivaldi
+  353  sudo snap remove vivaldi
+  354  nano
+  355  ll
+  356  rm attesttest
+  357  ll
+  358  nano
+  359  ll
+  360  crontab -e
+  361  find test.txt
+  362  cd ..
+  363  ll
+  364  ..
+  365  cd ..
+  366  ll
+  367  cd ..
+  368  ll
+  369  cd home
+  370  ll
+  371  cd ganch2106
+  372  ll
+  373  crontab -e
+  374  ll
+  375  crontab -l
+  376  ll
+  377  cat test.txt
+  378  ll
+  379  find test.txt.bak
+  380  find test.txt
+  381  ll
+  382  crontab -e
+  383  ll
+  384  cat testcron
+  385  crontab -e
+  386  ll
+  387  find test.txt.bak
+  388  ll
+  389  crontab -e
+  390  ll
+  391  crontab -e
+  392  ll
+  393  crontab -e
+  394  ll
+  395  crontab -e
+  396  ll
+  397  find test.txt.bak
+  398  ll
+  399  crontab -e
+  400  ll
+  401  crontab -e
+  402  ll
+  403  l
+  404  ll
+  405  l
+  406  ll
+  407  crontab -e
+  408  ll
+  409  cat test.txt
+  410  ll
+  411  ip a
+  412  ip r
+  413  sudo su
+  414  cat > home_animals.txt
+  415  gnome-control-center keyboard
+  416  rm home_animals.txt
+  417  cat > home_animals.txt
+  418  cat > pack_animals.txt
+  419  cat home_animals.txt pack_animals.txt > all_animals.txt
+  420  cat all_animals.txt
+  421  mv all_animals.txt friends_of_human.txt
+  422  ls
+  423  cat friends_of_human.txt
+  424  mkdir animal_files
+  425  mv friends_of_human.txt animal_files/
+  426  cd animal_files
+  427  ls
+  428  sudo apt-get update
+  429  sudo apt-get install wget lsb-release gnupg wget https: //dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+  430  sudo apt-get update
+  431  sudo apt-get install wget lsb-release gnupg
+  432  wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+  433  sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+  434  sudo apt-get update
+  435  sudo apt-get install mysql-server
+  436  mysql --version
+  437  wget http://archive.ubuntu.com/ubuntu/pool/universe/v/vim/vim_8.1.2269-1ubuntu5_amd64.deb
+  438  wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.6_amd64.deb
+  439  sudo apt-get install wget
+  440  wget --version
+  441  sudo dpkg -r wget
+  442  sudo apt-get install htop
+  443  htop --version
+  444  sudo dpkg -r htop
+  445  htop --version
+  446  history
+  447  hisory > history_commands.txt
+  448  history > history_commands.txt
